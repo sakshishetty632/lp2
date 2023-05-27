@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>35069 Assignment 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body style="background-color: #121212;">
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo.png" alt="Fakeamazon" width="120" >
+            </a>
+          </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#home">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href=""></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cart"> 
+                    <i class="bi bi-cart-check-fill"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#account" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Hello,Sign in
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#signin">Sign in</a></li>
+                  <li><a class="dropdown-item" href="#signup">Sign up</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--Slideshow-->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval= " 1000">
+            <img src="img/clothing.jpg" class="d-block w-100" alt="Clothing offer" >
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="img/electro.jpg" class="d-block w-100" alt="Electronics Offer">
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="img/haircare.jpg" class="d-block w-100" alt="Personal Care Offer" >
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="img/home.jpg" class="d-block w-100" alt="Home Decor Offer">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <p> </p>
+      <!--Sidebar-->
+      <div class="row no-gutters">
+        <div class="row justify-content-around">
+          <div class="col-2">
+            <ul class="nav flex-column nav bg-dark" data-bs-theme="dark">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">All</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Women's Section</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Men's Section</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link " href="#">Kid's Section</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home and Kitchen Section</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Grocery Section</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Personal Care Section</a>
+                </li>
+            </ul>
+          
+        </div>
+            <div class="col-3" style="background-color: #212529;">
+                <img src="img/box1.jpg" alt="smartphone" style="display: block;margin-left: auto;margin-top: 10px; margin-right: auto;">
+                <div class="row justify-content-around" >
+                    <div class="col-10">
+                        <button class="btn btn-dark" type="submit" style="margin-top: 10px;"><i class="bi bi-cart-check-fill">Add to cart</i></button>
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-dark" type="submit" style="margin-top: 10px;"><i class="bi bi-heart-fill"></i></button>
+                        
+                    </div>
+                
+            </div>
+            </div>
+
+            <div class="col-3" style="background-color: #212529;">
+                <img src="img/box2.jpg" alt="smartphone" style="display: block;margin-left: auto;margin-top: 10px; margin-right: auto;">
+                <div class="row justify-content-around" >
+                    <div class="col-10">
+                        <button class="btn btn-dark" type="submit" style="margin-top: 10px;"><i class="bi bi-cart-check-fill">Add to cart</i></button>
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-dark" type="submit" style="margin-top: 10px;"><i class="bi bi-heart-fill"></i></button>
+                        
+                    </div>
+                
+            </div>
+            </div>
+            <div class="col-3" style="background-color: #212529;">
+                <img src="img/box3.jpg" alt="smartphone" style="display: block;margin-left: auto;margin-top: 10px; margin-right: auto;height: 200px;">
+                <div class="row justify-content-around" >
+                    <div class="col-10">
+                        <button class="btn btn-dark" type="submit" style="margin-top: 10px;"><i class="bi bi-cart-check-fill">Add to cart</i></button>
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-dark" type="submit" style="margin-top: 10px;"><i class="bi bi-heart-fill"></i></button>
+                        
+                    </div>
+                
+            </div>
+            </div>
+            
+            
+        </div>
+    </div>
+          
+          
+          
+        
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>

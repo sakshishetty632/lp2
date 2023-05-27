@@ -1,0 +1,17 @@
+  <div class="app">
+    <div *ngIf="!showData">
+      <h1>{{title}}</h1>
+      <input type="text" id="name" placeholder="Enter Your Name : " [(ngModel)]="name" />
+      <input type="email" id="email" placeholder="Enter Your EmailId : " [(ngModel)]="email" />
+      <input type="text" id="address" placeholder="Enter Your Address : " [(ngModel)]="address" />
+      <input type="password" id="password" placeholder="Enter Your Password : " [(ngModel)]="password" />
+      <button (click)= "registerUser()"> Register </button>
+    </div>
+    <div *ngIf="showData">
+      <h1>Registeration Succesful</h1>
+      <p><span>Name:</span>{{name}}</p>
+      <p><span>EmailId:</span>{{email}}</p>
+      <p><span>Address:</span>{{address}}</p>
+      <button *ngIf="showData" (click)= "clear()">Clear</button>
+    </div>
+  </div>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form >
+    <label>Name:</label>
+    <input type="text" id="name">
+    <label>Roll Number:</label>
+    <input type="text" id="rollno">
+    <label>Department:</label>
+    <input type="text" id="dept">
+    <input type="submit" value="Submit" onclick="SubmitForm()">
+    </form>
+    <script>
+        function SubmitForm(){
+            var name=document.getElementById("name").value;
+            var rollno=document.getElementById("rollno").value;
+            var dept=document.getElementById("dept").value;
+            var xhr= new XMLHttpRequest();
+            xhr.onreadystatechange=()=>{
+                localStorage.setItem("Name",name);
+                localStorage.setItem("Roll Number",rollno);
+                localStorage.setItem("Department",dept);
+            }
+            xhr.open("POST","http://127.0.0.1:5500/index.html",true);
+            xhr.send();
+        }
+    </script>
+</body>
+</html>

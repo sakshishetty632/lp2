@@ -1,0 +1,3 @@
+FROM node:alpine
+COPY . /2B
+CMD node/2B/index.js
